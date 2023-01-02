@@ -22,4 +22,4 @@ def test_version(client):
     content = response.text
     version = re.findall(r'PACKAGE_VERSION:\"(\d+.\d+.\d+)"', content)
 
-    assert version == ['4.14.0']
+    assert version == ['4.15.5']

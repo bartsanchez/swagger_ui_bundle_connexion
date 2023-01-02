@@ -1,0 +1,20 @@
+openapi: 3.0.0
+info:
+  title: Sample API
+  description: Sample API
+  version: 0.0.1
+paths:
+  /foo:
+    get:
+      operationId: foo.foo
+      summary: Returns a list of fake strings.
+      description: Sample endpoint
+      responses:
+        '200':    # status code
+          description: A JSON array of fake strings
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: string
